@@ -47,6 +47,7 @@ RUN apt-get -y install git \
 ENV RBENV_ROOT /usr/local/src/rbenv
 ENV RUBY_VERSION 3.1.2
 ENV PATH ${RBENV_ROOT}/bin:${RBENV_ROOT}/shims:$PATH
+COPY run-once.sh /home
 
 # "#################################################"
 # "Install rbenv to manage Ruby versions"
