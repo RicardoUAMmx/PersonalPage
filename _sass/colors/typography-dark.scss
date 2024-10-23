@@ -4,19 +4,19 @@
 
 @mixin dark-scheme {
   /* Framework color */
-  --main-bg: rgb(27, 27, 30);
+  --main-bg: rgb(34, 51, 68);
   --mask-bg: rgb(68, 69, 70);
   --main-border-color: rgb(44, 45, 45);
 
   /* Common color */
   --text-color: rgb(175, 176, 177);
-  --text-muted-color: #868686;
-  --text-muted-hightlight-color: #aeaeae;
-  --heading-color: #cccccc;
+  --text-muted-color: #529a7a;
+  --text-muted-highlight-color: #aeaeae;
+  --heading-color: rgb(255, 255, 255);
   --label-color: #a7a7a7;
   --blockquote-border-color: rgb(66, 66, 66);
   --blockquote-text-color: #868686;
-  --link-color: rgb(138, 180, 248);
+  --link-color: var(--site-title-color);
   --link-underline-color: rgb(82, 108, 150);
   --button-bg: #1e1e1e;
   --btn-border-color: #2e2f31;
@@ -35,19 +35,20 @@
   );
 
   /* Sidebar */
-  --site-title-color: #717070;
-  --site-subtitle-color: #868686;
-  --sidebar-bg: #1e1e1e;
-  --sidebar-border-color: #292929;
+  --site-title-color: #ffe64b;
+  --site-subtitle-color: #529a7a;
+  --sidebar-bg: rgb(20, 31, 43);
+  --sidebar-border-color: rgb(20, 31, 43);
   --sidebar-muted-color: #868686;
-  --sidebar-active-color: rgb(255, 255, 255, 0.95);
-  --sidebar-hover-bg: #262626;
-  --sidebar-btn-bg: #232328;
-  --sidebar-btn-color: #787878;
-  --avatar-border-color: rgb(206, 206, 206, 0.9);
+  --sidebar-active-color: rgb(255, 255, 255);
+  --sidebar-hover-title: #d75032;
+  --sidebar-hover-bg: var(--main-bg);
+  --sidebar-btn-bg: var(--main-bg);
+  --sidebar-btn-color: rgb(255, 255, 255);
+  --avatar-border-color: var(--site-subtitle-color);
 
   /* Topbar */
-  --topbar-bg: rgb(27, 27, 30, 0.64);
+  --topbar-bg: var(--sidebar-bg);
   --topbar-text-color: var(--text-color);
   --search-border-color: rgb(55, 55, 55);
   --search-icon-color: rgb(100, 102, 105);
@@ -60,15 +61,15 @@
 
   /* Posts */
   --toc-highlight: rgb(116, 178, 243);
-  --tag-hover: rgb(43, 56, 62);
+  --tag-hover: rgb(33, 56, 62);
   --tb-odd-bg: #252526; /* odd rows of the posts' table */
   --tb-even-bg: rgb(31, 31, 34); /* even rows of the posts' table */
   --tb-border-color: var(--tb-odd-bg);
   --footnote-target-bg: rgb(63, 81, 181);
   --btn-share-color: #6c757d;
   --btn-share-hover-color: #bfc1ca;
-  --card-bg: #1e1e1e;
-  --card-hovor-bg: #464d51;
+  --card-bg: var(--sidebar-bg);
+  --card-hovor-bg: #111111;
   --card-shadow: rgb(21, 21, 21, 0.72) 0 6px 18px 0,
     rgb(137, 135, 135, 0.24) 0 0 0 1px;
   --kbd-wrap-color: #6a6a6a;
@@ -84,27 +85,29 @@
   --prompt-danger-bg: rgb(86, 28, 8, 0.8);
   --prompt-danger-icon-color: #cd0202;
 
-  /* tags */
-  --tag-border: rgb(59, 79, 88);
-  --tag-shadow: rgb(32, 33, 33);
-  --dash-color: rgb(63, 65, 68);
+  /* Tags */
+  --tag-border: var(--site-subtitle-color);
+  --tag-shadow: #111111;
+  --dash-color: var(--sidebar-muted-color);
   --search-tag-bg: #292828;
 
-  /* categories */
+  /* Categories */
   --categories-border: rgb(64, 66, 69, 0.5);
   --categories-hover-bg: rgb(73, 75, 76);
   --categories-icon-hover-color: white;
 
-  /* archives */
-  --timeline-node-bg: rgb(150, 152, 156);
-  --timeline-color: rgb(63, 65, 68);
-  --timeline-year-dot-color: var(--timeline-color);
+  /* Archive */
+  --timeline-node-bg: var(--site-title-color);
+  --timeline-color: #111111;
+  --timeline-year-dot-color: var(--sidebar-hover-bg);
+
+  color-scheme: dark;
 
   .light {
     display: none;
   }
 
-  /* categories */
+  /* Categories */
   .categories.card,
   .list-group-item {
     background-color: var(--card-bg);
@@ -130,15 +133,13 @@
   #archives li:nth-child(odd) {
     background-image: linear-gradient(
       to left,
-      rgb(26, 26, 30),
-      rgb(39, 39, 45),
-      rgb(39, 39, 45),
-      rgb(39, 39, 45),
-      rgb(26, 26, 30)
+      rgb(20, 31, 43),
+      rgb(17, 36, 46),
+      rgb(17, 36, 46),
+      rgb(17, 36, 46),
+      rgb(20, 31, 43)
     );
   }
-
-  color-scheme: dark;
 
   /* stylelint-disable-next-line selector-id-pattern */
   #disqus_thread {
