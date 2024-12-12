@@ -28,8 +28,13 @@ url: "https://www.ingricardo.pro"
 github:
   username: RicardoUAMmx # change to your github username
 
-twitter:
-  username: RicardoHzO # change to your twitter username
+facebook:
+  username: mt.ricardo.o
+
+telegram:
+  username: DikkiDinky
+# twitter:
+#   username: RicardoHzO # change to your twitter username
 
 social:
   # Change to your full name.
@@ -38,10 +43,10 @@ social:
   email: ricardo.hdz.o@outlook.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/RicardoHzO # change to your twitter homepage
-    - https://github.com/RicardoUAMmx # change to your github homepage
+    # - https://twitter.com/RicardoHzO # change to your twitter homepage
+    # - https://github.com/RicardoUAMmx # change to your github homepage
     # Uncomment below to add more social links
-    - https://www.facebook.com/mt.ricardo.o
+    # - https://www.facebook.com/mt.ricardo.o
     - https://www.linkedin.com/in/ricardo-hernández-7a8a2a30a
 
 # Site Verification Settings
