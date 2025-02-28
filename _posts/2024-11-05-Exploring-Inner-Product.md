@@ -5,6 +5,7 @@ categories: [Mathematics, Programming]
 tags: [innerproduct, numpy]
 description: About Inner Product in Numpy
 math: true
+pin: true
 ---
 
 # Exploring Inner Product in Spaces with Python and Numpy
