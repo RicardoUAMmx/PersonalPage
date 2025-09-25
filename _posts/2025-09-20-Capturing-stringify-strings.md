@@ -47,3 +47,7 @@ ne followed by 4 hexadecimal digits.
 
 And with the above we know if it is right, because we dont have any string if
 we havent close it.
+
+![Strings Flow Folded](/assets/img/automata-string.png){: width="700" height="400" .normal }
+_String automata_
+
